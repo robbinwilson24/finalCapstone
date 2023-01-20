@@ -1,0 +1,63 @@
+
+/* Formatting the adise's visual aspects and floating them to the right */
+aside {
+    background-color:rgb(177, 5, 5);
+    border: 1px solid rgb(177, 5, 5);
+    border-radius: 10px;
+    float: right;
+    color: black;
+    width: 16vw;
+    padding: 1vw;
+    padding-right: 1.5vw;
+    margin-right: 2vw;
+    margin-top: 6vw;
+    font-size: 15px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+/* Formatting the paragraphs in "About us" */
+.greyParagraph {  
+    border: 1px solid rgb(189, 185, 185);
+    background-color: rgb(189, 185, 185);
+    border-radius: 10px;
+    padding: .5vw;
+    color: rgb(9, 9, 9);
+    width: 68vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 1vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* formatting the look of h2 headings */
+h2 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    width: 20vw;
+    margin-left: 30vw;
+    margin-right: auto;
+    padding: 3vh;
+}
+
+/*Changing the colour of the radio button text labels*/
+label {
+    color: white;
+}
+
+/*Changing the colour of words in the form*/
+.formWords {
+    color: White;
+}
+
+/*formatting the border and the positioning of the form*/
+form {
+    border: 2px solid white;
+    width: 40vw;
+    padding: 5vw;
+    margin-left: 2vw;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+
+}

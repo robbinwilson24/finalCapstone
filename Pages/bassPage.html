@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Bass Guitars</title>
+    <!--Linked to both the main CSS sheet and the one for the sales pages only - as i dont want aspects on the main page changed-->
+	<link href="../Styles/task29Styles.css" rel="stylesheet" type="text/css">
+    <link href="../Styles/salesPageStyles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Adding styles that are specific to this page-->
+    <style>
+        table {
+            background-color: rgb(9, 34, 199);
+            border: 1px solid rgb(9, 34, 199) ;
+            border-collapse: collapse;
+        }
+        th {
+            border-right: 3px solid rgb(16, 16, 16);
+            border-left:  3px solid rgb(16, 16, 16);
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.1vw;
+            padding: .3vw; 
+        }
+        td {
+            border-right: 3px solid rgb(16, 16, 16);
+            border-left:  3px solid rgb(16, 16, 16);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1vw;
+            padding: .3vw; 
+        }
+        h3 {
+            border-bottom: 1px solid rgb(9, 34, 199);
+        }
+        h2 {
+            border-bottom: 2px solid rgb(9, 34, 199);
+        }
+
+        h4 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-weight: 400;
+        width: 20vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vh;
+        padding: 1vh;
+        border-bottom: 1px solid rgb(9, 34, 199);
+        color: white;
+        }
+    </style>
+</head>
+
+<body onload="arrayOnLoad(); addComments()">
+    <!--Header with my website name and a nav list that links to other pages I have created-->
+	<header>
+		<h1>
+            <a href="../index.html">SKY GUITARS</a>
+        </h1>
+        <nav class="centreNav">
+			<ul>
+				<li class="navList" style="border:none"><a href="../Pages/aboutUs.html">About Us</a></li>
+				<li class="navList"><a href="../Pages/newsletter.html">Newsletter</a></li>
+				<li class="navList" style="border:none"><a href="../Pages/saveForLaterPage.html">Wishlist </a></li>
+			</ul>
+        </nav>
+	</header>
+
+	<main>
+
+        <h2>BASS GUITARS</h2>
+
+        <!--Creating a div with a class that will be used for each item being sold-->
+        <div class="saleItem">
+
+            <h3>Fender Jazz Bass</h3>
+
+            <picture>
+                <!--When the screen goes below 800px, the smaller image will be used -->
+                <source class="saleImage" media="(min-width:800px)" srcset="../Images/productImages/jazz_bass_large.png">
+                <img class="saleImage" src="../Images/productImages/jazz_bass_small.png" alt="Jazz Bass Guitar">
+            </picture>
+
+            <!--Adding a table for all of the guitar specifications, This will be done on each guitar-->
+            <table class="features">
+                <tr>
+                    <th>BODY SHAPE</th>
+                    <th>FINGERBOARD</th>
+                    <th>SCALE LENGTH</th>
+                    <th>ELECTRONICS</th>
+                    <th>COLOUR</th>
+                </tr>
+                <tr>
+                    <td>Jazz Bass</td>
+                    <td>Pau Ferro, 20 vintage frets </td>
+                    <td>863.60 mm / 34.00in</td>
+                    <td>Vintage 70's single coil Pickup</td>
+                    <td>3 Colour Sunburst</td>
+                </tr>
+            </table> 
+
+            <table  class="features">
+                <tr>
+                    <th>BODY MATERIAL</th>
+                    <th>NECK</th>
+                    <th>HARDWARE</th>
+                    <th>EXTRA FEATURES</th>
+                    <th>PRICE</th>
+                </tr>
+
+                <tr>
+                    <td>Alder</td>
+                    <td>70's C profile</td>
+                    <td>70s Vintage-Style tuners</td>
+                    <td>4-Saddle American Vintage Bridge</td>
+                    <td>£1099.00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="itemButtons">  
+            <form>
+                <input class="likeButtons" type="button" value="Like" onclick="likeFunction(this)">
+            </form>
+            <div class="buyNow">BUY NOW🪙</div>
+            <div class="addToWishlist">ADD TO WISHLIST➕</div>
+        </div>  
+
+            <div class="itemComments">
+                <h4>Comments</h4>
+                <div class="comments"></div>
+                
+                <form class="commentForm">
+                <textarea class="comment-input" placeholder="Enter your comment"></textarea>
+                <input class="userName" placeholder="Enter your name">
+                <button type="submit">Post Comment</button>
+            </form>
+        </div>
+
+
+
+
+
+		
+	</main>
+
+	<footer>
+        <!-- Adding a Div to contain my footer list which has links to other pages i have created -->
+        <div style="text-align:center">	
+            <ul>
+                <li class="footerList"><a href="../Pages/myReferences.html">References</a></li>
+				<li class="footerList"><a href="../Pages/newsletter.html">Newsletter</a></li>
+                <li class="footerList"><a href="../Pages/contactPage.html">Contact us</a></li>
+                <li class="footerList"><a href="../index.html">Home Page</a></li>
+            </ul>
+        </div>
+        
+        </footer> 
+
+<script type='text/javascript' src='../Javascript/task42-script.js'></script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>News and Reviews</title>
+    <!--Linked to both the main CSS sheet and the one for the text related pages only - as I dont want aspects on the main page changed-->
+	<link href="../Styles/task29Styles.css" rel="stylesheet" type="text/css">
+    <link href="../Styles/textPagesStyles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Adding styles that are specific to this page-->
+    <style>
+        #newsletter {
+            float: left;
+        }
+        #review1 {
+            margin: .8vw; 
+            padding: 1%;
+            height: 30vh;
+            width: 18vw;  
+        }
+        #review2 {
+            margin: .8vw; 
+            padding: 1%;
+            height: 30vh;
+            width: 18vw;
+        }
+        #review3 {
+            margin: .8vw; 
+            padding: 1%;
+            height: 30vh;
+            width: 18vw;
+        }
+        #review4 {
+            margin: .8vw; 
+            padding: 1%;
+            height: 30vh;
+            width: 18vw;
+        }
+        #reviewBlock {
+            max-width: 50vw;
+            margin-left: 50vw;
+        }
+        #newsh2 {
+            width: 20vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body onload="arrayOnLoad()">
+    <!--Header with my website name and a nav list that links to other pages I have created-->
+	<header>
+		<h1>SKY GUITARS</h1>
+		<nav class="centreNav">
+			<ul>
+				<li class="navList" style="border:none"><a href="../index.html">Main Menu</a></li>
+				<li class="navList"><a href="../Pages/aboutUs.html">About Us</a></li>
+                <li class="navList" style="border:none"><a href="../Pages/saveForLaterPage.html">Wishlist </a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+        <h2 id="newsh2">NEWS AND REVIEWS</h2>
+
+            <!-- I added a div to act as a block to keep the 'reviews' in - which are meant to be quotes-->
+            <div id="reviewBlock">
+
+                <!--Each review has an ID and is formatted above in the page-->
+                <aside id="review1">
+                    <p><q>The best guitar shop that I have been into in ages!</q><br><br> - John S, 28 </p>
+                </aside>
+
+                <aside id="review2">
+                    <p><q>Having been searching for a particular Les Paul for ages, I had almost given up hope by the time I visited the store.
+                        But the guys in store were super helpful and said they would do what ever they could to help.
+                        2 weeks later I recieved a call to say they had recieved the guitar I was looking for. Great service!</q><br>
+                        - Sarah J, 23</p><br>
+                </aside>
+                
+                <aside id="review3">
+                    <p><q>I love this place! We have so many guitar shops in London, so I wasn't expecting much. 
+                        But I was wrong, it is amazing! 10/10</q><br><br>
+                        - Mark M, 34</p>
+                </aside>
+
+                <aside id="review4">
+                    <p><q>I placed an order for a new Flying V, not a cheap guitar, so I was nervous about how it would be posted, but the team relpied to my email promptly and reassured me they woudl take the utmost care.
+                        less than 48 hours later I had my new guitar! They even threw in a free gig-bag! I am so happy!</q><br><br>
+                        - Graham N, 47</p>
+                </aside>
+            </div>
+
+            <!--A form if the user wants to sign up to a newsletter, 
+                and a radio button to ask how often they want to recieve the news letter-->
+            <form id="newsLetter">
+                <div class="formWords">SIGN UP TO OUR NEWS LETTER</div>
+                <br>
+                <label for="FirstName">First Name:</label>
+                <input type="text">
+                <br>
+                <label for="Surname">Last Name:</label>
+                <input type="text">
+                <br><br>
+                <label for="email">Email Address:</label>
+                <input type="text">
+                <br><br><br>
+
+                <div class="formWords">HOW OFTEN WOULD YOU LIKE TO RECIEVE OUR NEWSLETTER?</div>
+                <br>
+                <!--This section gives an error when i check it in the CSS validator, "Element must be the ID of a non-hidden form control " 
+                    I have spent ages trying to figure out what the problem is, and as far as I can see, I have done things correctly according to people with similar issues on stack overflow.
+                    The code works and has not broek my page -->
+                <label for="Weekly">Weekly</label>
+                <input type="radio" name="Weekly" id="Weekly"><br>
+                <label for="Bi-Weekly">Bi-Weekly</label>
+                <input type="radio" name="Bi-Weekly" id="Bi-Weekly"><br>
+                <label for="Monthly">Monthly</label>
+                <input type="radio" name="Monthly" id="Monthly"><br>
+                <label for="Quarterly">Quarterly</label>
+                <input type="radio" name="Quarterly" id="Quarterly"><br>
+                <br>
+                <input type="submit">
+
+            </form>
+	</main>
+
+	<footer>
+        <!-- Adding a Div to contain my footer list which has links to other pages i have created -->
+        <div style="text-align:center">	
+            <ul>
+                <li class="footerList"><a href="../Pages/myReferences.html">References</a></li>
+                <li class="footerList"><a href="../Pages/contactPage.html">Contact us</a></li>
+                <li class="footerList" style="border:none"><a href="../Pages/aboutUs.html">About Us</a></li>
+            </ul>
+        </div>
+	
+	</footer>
+    
+
+<script type='text/javascript' src='../Javascript/task42-script.js'></script>
+
+</body>
+</html>
+
+
+
