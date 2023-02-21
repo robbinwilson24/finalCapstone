@@ -1,4 +1,4 @@
-Project Name - Task 42: Capstone - Build a complete website. 
+
 
 ## Table of contents
 - [Introduction](#introduction)
