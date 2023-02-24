@@ -18,7 +18,8 @@ See directory here:
 ![CapstoneDirectory](https://user-images.githubusercontent.com/123034061/213828028-4bfd01a6-a252-42ef-8aee-e25105784c75.jpg)
 
 See main index page here:
-![CapstoneMainPage](https://user-images.githubusercontent.com/123034061/213828105-f3b0609a-8558-41db-bdad-e1d0eaadb7ad.jpg)
+![image](https://user-images.githubusercontent.com/123034061/221297905-f9b3e387-8c23-4ca2-81b0-7c0d997e6565.png)
+
 
 [Credits](#credits)
 This project was done by myself.
