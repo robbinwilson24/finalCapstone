@@ -10,7 +10,8 @@
 This project is the first instance of me implementing JavaScript into a webpage alongside HTML and CSS. The importance of this is to show that I am able to implement the skills I have learnt in the HyperionDev DfE web development course into a functional website. The project is a basic collection of web pages that represents an online guitar store. With pages to "purchase" different types of guitars, leave comments, a contact section and a "save for later" page. 
 
 ### Installation <a name="installation"/>
-To install the files, simply copy the entire project directory into a new parent folder on your machine. 
+1. Copy the repository onto your local machine.
+2. Extract the files from the zipped folder.
 
 ### How to use <a name="howToUse"/>
 Once you have copied the files into a file on your machine, you will be able to access the main index page in your browser and navigate between the connected pages from there.
