@@ -12,7 +12,7 @@ This project is the first instance of me implementing JavaScript into a webpage 
 ### Installation <a name="installation"/>
 To install the files, simply copy the entire project directory into a new parent folder on your machine. 
 
-### How to use <a name="howToUse">
+### How to use <a name="howToUse"/>
 Once you have copied the files into a file on your machine, you will be able to access the main index page in your browser and navigate between the connected pages from there.
 See directory here:
 ![CapstoneDirectory](https://user-images.githubusercontent.com/123034061/213828028-4bfd01a6-a252-42ef-8aee-e25105784c75.jpg)
