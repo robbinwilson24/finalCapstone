@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact Us</title>
+        <!--Linked to both the main CSS sheet and the one for the text related pages only - as I dont want aspects on the main page changed-->
+        <link href="../Styles/task29Styles.css" rel="stylesheet" type="text/css">
+    <link href="../Styles/textPagesStyles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Adding styles that are specific to this page-->
+    <style>
+        table {
+            border:5px solid white;
+            border-radius: 10px;
+            color: white;
+            width: 50vw;
+            table-layout: fixed;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5vw;
+            margin-bottom: 2vw;
+        }
+        th, td {
+            font-size: 1.4vw;
+            padding: 2vw; 
+        }
+        #contact {
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, sans-serif;
+            font-size: 2vw;
+        }
+
+        #contactFormDiv {
+            border:5px solid white;
+            border-radius: 10px;
+            color: white;
+            width: 50vw;
+            table-layout: fixed;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5vw;
+            margin-bottom: 2vw;
+
+        }
+
+        input {
+            width: 200px;
+            height: 20px;
+        }
+        
+    </style>
+</head>
+
+<body onload="arrayOnLoad()">
+    <!--Header with my website name and a nav list that links to other pages I have created-->
+	<header>
+		<h1>SKY GUITARS</h1>
+		<nav class="centreNav">
+			<ul>
+				<li class="navList" style="border:none"><a href="../index.html">Main Menu</a></li>
+				<li class="navList"><a href="../Pages/aboutUs.html">About Us</a></li>
+				<li class="navList" style="border:none"><a href="../Pages/saveForLaterPage.html">Wishlist </a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+        <!-- A table with the contact details - both are linked to email or call-->
+            <table>
+                <tr>
+                    <td id="contact" colspan="2">CONTACT US</td>
+                </tr>
+                <tr>
+                    <th>PHONE US:</th>
+                    <td><a href="tel:0751231231231212"><u>0751231231231212</u></a></td>
+                </tr>
+                <tr>
+                    <th>EMAIL US:</th>
+                    <td><a href="mailto:Someperson@aRealEmail.guitar"><u>Someperson@aRealEmail.guitar</u></a></td>
+                </tr>
+            </table>
+
+<!-- Create a DIV to contain the contact form  and all of it's input fields -->
+<div id="contactFormDiv">
+    <form id="contactForm" style="border:none">
+        <span style="color:white">DROP US A MESSAGE</span><br><br>
+        <label for="contactFormName">Name:</label>
+        <input type="text" id="contactFormName" name="contactFormName"><br><br>
+      
+        <label for="contactFormSurname">Surname:</label>
+        <input type="text" id="contactFormSurname" name="contactFormSurname"><br><br>
+      
+        <label for="contactFormEmail">Email Address:</label>
+        <input type="email" id="contactFormEmail" name="contactFormEmail"><br><br>
+      
+        <label for="contactFormContactNum">Contact Number (optional):</label>
+        <input type="text" id="contactFormContactNum" name="contactFormContactNum"><br><br>
+      
+        <label for="contactFormReason">Reason for Contact:</label>
+        <textarea id="contactFormReason" name="contactFormReason"></textarea><br><br>
+      
+        <input id="contactSubmit" type="submit" value="Submit">
+      </form>
+      
+</div>   
+
+	</main>
+
+	<footer>
+        <!-- Adding a Div to contain my footer list which has links to other pages i have created -->
+        <div style="text-align:center">	
+            <ul>
+                <li class="footerList"><a href="../Pages/myReferences.html">References</a></li>
+                <li class="footerList"><a href="../Pages/newsletter.html">Newsletter</a></li>
+                <li class="footerList" style="border:none"><a href="../Pages/aboutUs.html">About Us</a></li>
+            </ul>
+        </div>
+	</footer>
+
+<script type='text/javascript' src='../Javascript/task42-script.js'></script>
+
+
+<script>
+    // I added the script for the contact form direct into the HTML page as it was giving errors when trying to link it from the .js file. 
+    // I am still a bit rusty on linking JS to HTML , so will keep practicing.
+
+    contactForm.addEventListener("submit", function(event) {
+    alert("Thank you for submitting your query. \nA member of our team will be in touch within 24-48 hours. ")
+    // Stop the form from submitting when the button is clicked
+    event.preventDefault();
+    let contactFormName = document.getElementById("contactFormName");
+    let contactFormSurname = document.getElementById("contactFormSurname");
+    let contactFormEmail = document.getElementById("contactFormEmail");
+    let contactFormContactNum = document.getElementById("contactFormContactNum");
+    let contactFormReason = document.getElementById("contactFormReason");
+
+    contactFormName.value = "";
+    contactFormSurname.value = "";
+    contactFormEmail.value = "";
+    contactFormContactNum.value = "";
+    contactFormReason.value = "";
+  });
+</script>
+
+</body>
+</html>
+
+
+

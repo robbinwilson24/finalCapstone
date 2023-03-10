@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Electric Guitars</title>
+    <!--Linked to both the main CSS sheet and the one for the sales pages only - as i dont want aspects on the main page changed-->
+	<link href="../Styles/task29Styles.css" rel="stylesheet" type="text/css">
+    <link href="../Styles/salesPageStyles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!--Adding styles that are specific to this page-->
+    <style>
+        table {
+            background-color: rgb(177, 5, 5);
+            border: 1px solid rgb(177, 5, 5) ;
+            border-collapse: collapse;
+        }
+        th {
+            border-right: 3px solid rgb(16, 16, 16);
+            border-left:  3px solid rgb(16, 16, 16);
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.1vw;
+            padding: .3vw; 
+        }
+        td {
+            border-right: 3px solid rgb(16, 16, 16);
+            border-left:  3px solid rgb(16, 16, 16);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1vw;
+            padding: .3vw;
+        }
+        h3 {
+            border-bottom: 1px solid rgb(177, 5, 5);
+            margin-top: 75px;
+        }
+        h2 {
+            border-bottom: 2px solid rgb(177, 5, 5);
+        }
+
+        h4 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-weight: 400;
+        width: 20vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vh;
+        padding: 1vh;
+        border-bottom: 1px solid rgb(177, 5, 5);
+        }
+    </style>
+</head>
+
+<!-- <body onload="wishArray(); addComments()"> -->
+    <body onload="arrayOnLoad(); addComments()">
+
+    <!--Header with my website name and a nav list that links to other pages I have created-->
+	<header>
+		<h1>
+            <a href="../index.html">SKY GUITARS</a>
+        </h1>
+        <nav class="centreNav">
+			<ul>
+				<li class="navList" style="border:none"><a href="../Pages/aboutUs.html">About Us</a></li>
+				<li class="navList"><a href="../Pages/newsletter.html">Newsletter</a></li>
+				<li class="navList" style="border:none"><a href="../Pages/saveForLaterPage.html">Wishlist </a></li>
+			</ul>
+	</header>
+
+	<main>
+
+        <h2>ELECTRIC GUITARS</h2>
+
+        <!--Creating a div with a class that will be used for each item being sold-->
+        <div class="saleItem" >
+
+            <h3>Epiphone Flying V</h3>
+
+            <picture>
+                <!--When the screen goes below 800px, the smaller image will be used -->
+                <source class="saleImage" media="(min-width:800px)" srcset="../Images/productImages/flying-v_large.png">
+                <img class="saleImage" src="../Images/productImages/flying-v_small.png" alt="Flying V Guitar">
+            </picture>
+
+            <!--Adding a table for all of the guitar specifications, This will be done on each guitar-->
+            <table class="features">
+                <tr>
+                    <th>BODY SHAPE</th>
+                    <th>FINGERBOARD</th>
+                    <th>SCALE LENGTH</th>
+                    <th>ELECTRONICS</th>
+                    <th>COLOUR</th>
+                </tr>
+                <tr>
+                    <td>Flying V</td>
+                    <td>Maple wood, 22 standard frets</td>
+                    <td>628.0 mm / 24.724 in</td>
+                    <td>EMG 81/85 Active Pickups</td>
+                    <td>Matte Black</td>
+                </tr>
+            </table> 
+            <table  class="features">
+                <tr>
+                    <th>BODY MATERIAL</th>
+                    <th>NECK</th>
+                    <th>HARDWARE</th>
+                    <th>EXTRA FEATURES</th>
+                    <th>PRICE</th>
+                </tr>
+
+                <tr>
+                    <td>Mahogany</td>
+                    <td>Rounded C profile</td>
+                    <td>Grover locking tuners</td>
+                    <td>push/pull pots for voice selection</td>
+                    <td>£799.00</td>
+                </tr>
+            </table>
+            
+        <div class="itemButtons">  
+            <form>
+                <input class="likeButtons" type="button" value="Like" onclick="likeFunction(this)">
+            </form>
+            <div class="buyNow">BUY NOW🪙</div>
+            <div class="addToWishlist">ADD TO WISHLIST➕</div>
+        </div>  
+
+            <div class="itemComments">
+                <h4>Comments</h4>
+                <div class="comments"></div>
+                <form class="commentForm">
+                  <textarea class="comment-input" placeholder="Enter your comment"></textarea>
+                  <input class="userName" placeholder="Enter your name">
+                  <button type="submit">Post Comment</button>
+                </form>
+              </div>
+
+
+
+        </div>
+
+
+        <div class="saleItem">
+
+            <h3>Gibson Les Paul Custom</h3>
+
+            <picture>
+                <source class="saleImage" media="(min-width:800px)" srcset="../Images/productImages/les_paul_large.png">
+                <img class="saleImage" src="../Images/productImages/les_paul_small.png" alt="Les Paul Guitar">
+            </picture>
+
+            <table class="features">
+                <tr>
+                    <th>BODY SHAPE</th>
+                    <th>FINGERBOARD</th>
+                    <th>SCALE LENGTH</th>
+                    <th>ELECTRONICS</th>
+                    <th>COLOUR</th>
+                </tr>
+                <tr>
+                    <td>Les Paul</td>
+                    <td>Ebony, 22 Medium Jumbo Frets</td>
+                    <td>628.65 mm / 24.75 in</td>
+                    <td>Gibson Burst-Bucker Pickups</td>
+                    <td>Quilted Honey Gloss</td>
+                </tr>
+            </table>
+            <table class="features">
+                <tr>
+                    <th>BODY MATERIAL</th>
+                    <th>NECK</th>
+                    <th>HARDWARE</th>
+                    <th>EXTRA FEATURES</th>
+                    <th>PRICE</th>
+                </tr>
+                <tr>
+                    <td>Mahogany</td>
+                    <td>60s SlimTaper profile</td>
+                    <td>Grover® Rotomatic® 18:1 tuners</td>
+                    <td>LockTone™ Stop Bar</td>
+                    <td>£1499.00</td>
+                </tr>
+            </table>
+
+            <div class="itemButtons">  
+                <form>
+                    <input class="likeButtons" type="button" value="Like" onclick="likeFunction(this)">
+                </form>
+                <div class="buyNow">BUY NOW🪙</div>
+                <div class="addToWishlist">ADD TO WISHLIST➕</div>
+            </div>  
+    
+            <div class="itemComments">
+                <h4>Comments</h4>
+                <div class="comments"></div>
+                <form class="commentForm">
+                  <textarea class="comment-input" placeholder="Enter your comment"></textarea>
+                  <input class="userName" placeholder="Enter your name">
+                  <button type="submit">Post Comment</button>
+                </form>
+              </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="saleItem">
+
+            <h3>Fender Stratocaster</h3>
+
+            <picture>
+                <source class="saleImage" media="(min-width:800px)">
+                <img class="saleImage" src="../Images/productImages/strat small.png" alt="Stratocaster Guitar">
+            </picture>
+
+            <table class="features">
+                <tr>
+                    <th>BODY SHAPE</th>
+                    <th>FINGERBOARD</th>
+                    <th>SCALE LENGTH</th>
+                    <th>ELECTRONICS</th>
+                    <th>COLOUR</th>
+                </tr>
+                <tr>
+                    <td>Stratocaster</td>
+                    <td>Pau Ferro, 22 medium frets</td>
+                    <td>647.7 mm / 25.5 in</td>
+                    <td>Player Plus Noiseless Pickups</td>
+                    <td>Candy Apple Red</td>
+                </tr>
+            </table>
+            
+            <table class="features">
+                <tr>
+                    <th>BODY MATERIAL</th>
+                    <th>NECK</th>
+                    <th>HARDWARE</th>
+                    <th>EXTRA FEATURES</th>
+                    <th>PRICE</th>
+                </tr>
+                <tr>
+                    <td>Alder</td>
+                    <td>Modern C profile</td>
+                    <td>Grover® Rotomatic® 18:1 tuners</td>
+                    <td>Push/Pull tone knob</td>
+                    <td>£889.00</td>
+                </tr>
+            </table>
+
+            <div class="itemButtons">  
+                <form>
+                    <input class="likeButtons" type="button" value="Like" onclick="likeFunction(this)">
+                </form>
+                <div class="buyNow">BUY NOW🪙</div>
+                <div class="addToWishlist">ADD TO WISHLIST➕</div>
+            </div>  
+    
+            <div class="itemComments">
+                <h4>Comments</h4>
+                <div class="comments"></div>
+                <form class="commentForm">
+                  <textarea class="comment-input" placeholder="Enter your comment"></textarea>
+                  <input class="userName" placeholder="Enter your name">
+                  <button type="submit">Post Comment</button>
+                </form>
+              </div>
+
+
+        </div>
+
+
+        
+
+
+
+	
+	</main>
+
+	<footer>
+
+        <!-- Adding a Div to contain my footer list which has links to other pages i have created -->
+        <div style="text-align:center">	
+            <ul>
+                <li class="footerList"><a href="../Pages/myReferences.html">References</a></li>
+				<li class="footerList"><a href="../Pages/newsletter.html">Newsletter</a></li>
+                <li class="footerList"><a href="../Pages/contactPage.html">Contact us</a></li>
+                <li class="footerList"><a href="../index.html">Home Page</a></li>
+            </ul>
+        </div>
+        </footer>
+
+<script type='text/javascript' src='../Javascript/task42-script.js'></script>
+
+</body>
+</html>

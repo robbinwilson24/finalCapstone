@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Guitars</title>
+	<link href="./Styles/task29Styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="arrayOnLoad()">
+	<!--Header with my website name and a nav list that links to other pages I have created-->
+	<header>
+		<h1>SKY GUITARS</h1>
+		<nav class="centreNav">
+			<ul>
+				<li class="navList" style="border:none"><a href="./Pages/aboutUs.html">About us</a></li>
+				<li class="navList"><a href="./Pages/newsletter.html">Newsletter</a></li>
+				<li class="navList" style="border:none"><a href="./Pages/saveForLaterPage.html">Wishlist </a></li>
+			</ul>
+				
+			<main>
+				<!--Creating a class for my grid-->
+				<div class="categoryGrid">
+		
+					<!--Creating a div container for each of the main category squares on the home page, -->
+					<!--Each dive will create a sqaure that will take you to another page when clicked on-->
+					<div class="electricGuitar">
+						<a href="./Pages/electricPage.html">
+							<!--Adding images to the containers for the relevant category-->
+							<img src="./Images/silhouettes/Flying-V_small-white.png" id="electricIcon" alt="Electric Guitar Silhouette">
+						</a>
+						<div>Electric Guitars</div>
+					</div>
+		
+					<div class="bassGuitar">
+						<a href="./Pages/bassPage.html">
+								<img src="./Images/silhouettes/RickenBass_small-white.png" id="bassIcon" alt="Bass Guitar Silhouette">
+						</a>
+						<div>Bass Guitars</div>
+					</div>
+					
+					<div class="acousticGuitar">
+						<a href="./Pages/acousticPage.html">
+							<img src="./Images/silhouettes/acoustic_small-white.png" id="acousticIcon" alt="Acoustic Guitar Silhouette">
+						</a>	
+						<div>Acoustic Guitars</div>
+					</div>
+			
+				</div>
+			</main>
+			<footer>
+		
+			<!-- Adding a Div to contain my footer list which has links to other pages i have created -->
+			<div style="text-align:center">	
+				<ul>
+					<li class="footerList"><a href="./Pages/myReferences.html">References</a></li>
+					<li class="footerList"><a href="./Pages/newsletter.html">Newsletter</a></li>
+					<li class="footerList"><a href="./Pages/contactPage.html">Contact us</a></li>
+				</ul>
+			</div>
+			</footer>
+		
+		<script type='text/javascript' src='./Javascript/task42-script.js'></script>
+		</body>
+		</html>
+		
+		
+		
+		

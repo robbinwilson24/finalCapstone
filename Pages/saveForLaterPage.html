@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>About Us</title>
+        <!--Linked to both the main CSS sheet and the one for the text related pages only - as I dont want aspects on the main page changed-->
+	<link href="../Styles/task29Styles.css" rel="stylesheet" type="text/css">
+    <link href="../Styles/textPagesStyles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+#wishlistUL > li {
+    border: 2px white solid;
+    border-radius: 5px;
+    color: white;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: white;
+    min-width: 15vw;
+    margin-left: 45% ;
+    margin-right: 50%;
+}
+    </style>
+
+</head>
+
+<body onload="arrayOnLoad(); populateWishlist()">
+    <!--Header with my website name and a nav list that links to other pages I have created-->
+	<header>
+		<h1>SKY GUITARS</h1>
+		<nav class="centreNav">
+			<ul>
+				<li class="navList" style="border:none"><a href="../index.html">Main Menu</a></li>
+				<li class="navList"><a href="../Pages/newsletter.html">Newsletter</a></li>
+				<li class="navList" style="border:none"><a href="../Pages/contactPage.html">Contact us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+            
+    <article>
+        <h3>YOUR SAVED ITEMS</h3>
+            <div id="wishlistDiv">
+                <ul id="wishlistUL">
+                </ul>
+            </div>
+
+    </article> 
+	</main>
+
+	<footer>
+    <!-- Adding a Div to contain my footer list which has links to other pages i have created -->
+	    <div style="text-align:center">	
+		    <ul>
+                <li class="footerList"><a href="../Pages/myReferences.html">References</a></li>
+                <li class="footerList"><a href="../Pages/newsletter.html">Newsletter</a></li>
+                <li class="footerList"><a href="../Pages/contactPage.html">Contact us</a></li>
+            </ul>
+        </div>
+	
+	</footer>
+<script type='text/javascript' src='../Javascript/task42-script.js'></script>
+</body>
+</html>
+
+
+
